@@ -1,0 +1,29 @@
+name: Deploy to SmarterASP.NET via FTP
+
+on:
+  push:
+    branches:
+      - main   # or your default branch
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build project (example for Angular)
+      run: |
+        npm install
+        npm run build -- --configuration production
+      # Adapt build commands based on your project
+
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4
+      with:
+        server: ${{ secrets.FTP_HOST }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist/your-app-name   # Adjust to your build output folder
+        server-dir: ${{ secrets.FTP_REMOTE_PATH }}   # usually "/" or "wwwroot"
