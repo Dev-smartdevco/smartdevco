@@ -1,5 +1,4 @@
 import { CUSTOM_ELEMENTS_SCHEMA, Component, Inject, NO_ERRORS_SCHEMA } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { SliderComponent } from './slider/slider.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { OurservicesComponent } from './ourservices/ourservices.component';
@@ -15,7 +14,7 @@ import { ToastrService } from 'ngx-toastr';
 
 @Component({
     selector: 'app-home',
-    imports: [RouterLink,
+    imports: [
         SliderComponent,
         AboutusComponent,
         OurservicesComponent,
