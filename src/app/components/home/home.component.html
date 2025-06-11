@@ -1,0 +1,145 @@
+
+  <!-- mobile navbar end -->
+
+  <!-- hero section start -->
+<home-slider></home-slider>
+<!-- hero section end -->
+
+    <!-- about section start  -->
+<home-aboutus></home-aboutus>
+    <!-- about section end -->
+
+    <!-- Services section start  -->
+<home-ourservices></home-ourservices>
+<!-- Services section end  -->
+
+
+     <!-- Our Strategy Process section start  -->
+<home-strategy></home-strategy>
+     <!-- Our Strategy Process section end -->
+
+     <!-- our portfolio section start  -->
+     <home-portfolioslid></home-portfolioslid>
+     <!-- our portfolio section end -->
+
+     <!-- why choosing us section  -->
+     <section class="container mb-section">
+        <div class="section-top-part">
+            <h2>Why Choosing Us</h2>  
+            <div class="divider"><div class="divider1"></div><div class="divider2"></div><div class="divider2"></div></div>
+            <p>We are a digital transformation consultancy and software development companythat provides cutting edge engineering solutions, helping Fortune companiesand enterprise clients untangle complex issues</p>
+        </div>
+        <div class="choosing-points">
+            <img class="choosingG" src="../assets/public/svg/chosingG.svg" alt="">
+            <div class="point">
+                <img src="../assets/public/svg/point1.svg" alt="">
+                <h3>Flexible</h3>
+                <p>Our team will work as per your convenience all we need is a 24 hour prior notice.</p>
+            </div>
+            <div class="point mt-section mt-none">
+                <img src="../assets/public/svg/point2.svg" alt="">
+                <h3>Everyone is In-House</h3>
+                <p>We don’t work with freelancers; all the team members here are full-time inhouse employees.</p>
+            </div>
+            <div class="point">
+                <img src="../assets/public/svg/point3.svg" alt="">
+                <h3>Nimble, Dedicated Teams</h3>
+                <p>Our expert developers are always ready to show off their creativity and foresight; hence, the projects developed by us are always unmatched in the user interface.</p>
+            </div>
+        </div>
+     </section>
+     <!-- why choosing us section end -->
+
+     <!-- experience section  -->
+     <section class="experience-section mb-section">
+        <div class="container">
+            <div class="heading-section">
+                <h2>Having 10 Years of Experience</h2>
+                <div class="divider"><div class="divider1"></div><div class="divider2"></div><div class="divider2"></div></div>
+                <p>Our mission is to help enterprises accelerate adoption of new technologies, untangle complex issues that always emerge during digital evolution, and orchestrate ongoing innovation. Whether it is a consumer-oriented app or a transformative enterprise-class solution.</p>
+            </div>
+            <div class="experience-points">
+                <div class="point">
+                    <img src="../assets/public/svg/expitem1.svg" alt="">
+                    <h2>587</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="point">
+                    <img src="../assets/public/svg/expitem2.svg" alt="">
+                    <h2>14965</h2>
+                    <p>Files Uploaded</p>
+                </div>
+                <div class="point">
+                    <img src="../assets/public/svg/expitem3.svg" alt="">
+                    <h2>186201</h2>
+                    <p>Lines of Code</p>
+                </div>
+                <div class="point">
+                    <img src="../assets/public/svg/expitem4.svg" alt="">
+                    <h2>587</h2>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+        </div>
+     </section>
+     <!-- experience section end -->
+
+    <!-- testimonials section  -->
+      <home-testimonials></home-testimonials>
+        <!-- testimonials section end -->
+
+
+        <!-- faq section  -->
+
+      <home-faq></home-faq>
+        <!-- faq section end -->
+
+        <!-- contact section  -->
+        <section class="contact-section container mb-section">
+            <div class="section-top-part">
+                <h2>We are happy to hear from you</h2>  
+                <div class="divider"><div class="divider1"></div><div class="divider2"></div><div class="divider2"></div></div>
+                <p>We are a digital transformation consultancy and software development companythat provides cutting edge engineering solutions, helping Fortune companiesand enterprise clients untangle complex issues</p>
+            </div>
+            <div class="contact-form">
+                <form (submit)="sendEmail($event)" [formGroup]="form">
+                    <div class="input-group">
+                        <img src="../assets/public/svg/inputname.svg" alt="">
+                        <div class="input-label">
+                            <label for="name">Name<span class="error">*</span></label>
+                            <input type="text" id="name"name="from_name" formControlName="from_name" placeholder="Write Your Name">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <img src="../assets/public/svg/inputemail.svg" alt="">
+                        <div class="input-label">
+                            <label for="email">Email<span class="error">*</span></label>
+                            <input type="email" id="email"name="to_name" formControlName="email" placeholder="Write Your Email Address">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <img src="../assets/public/svg/inputcall.svg" alt="">
+                        <div class="input-label">
+                            <label for="phone">Phone<span class="error">*</span></label>
+                            <input type="tel" id="phone" name="user_phone" formControlName="phone"placeholder="Write Your Phone Number">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <img src="../assets/public/svg/inputmessage.svg" alt="">
+                        <div class="input-label">
+                            <label for="message">Message<span class="error">*</span></label>
+                            <textarea id="message"name="message" formControlName="message" placeholder="Write Your Message, How Can We Help You, Write Any Question"></textarea>
+                        </div>
+                    </div>
+                    <button class="primary-btn" type="submit">Send To Us <img src="../assets/public/svg/contactbtn.svg" alt=""></button>
+                </form>
+                <div class="contact-img">
+                    <img src="../assets/public/images/ContactG.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- contact section end -->
+
+        <!-- logos section  -->
+       <home-sponsor></home-sponsor>
+        <!-- logos section end -->

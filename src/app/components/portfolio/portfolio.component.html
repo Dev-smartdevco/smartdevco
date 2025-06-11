@@ -1,0 +1,75 @@
+
+    <!-- meta & breadcrumbs top section start  -->
+    <section class="title-breadcrumbs">
+        <div class="breadcrumbs container">
+            <a [routerLink]="['/home']">Home</a>
+            <img src="../../../assets/public/svg/breadcrumbs.svg" alt="">
+            <a>Portfolio</a>
+        </div>
+        <div class="page-title">
+            <h1>Portfolio</h1>
+        </div>
+    </section>
+    <!-- meta & breadcrumbs top section end -->
+
+    <!-- portfolio page section  -->
+    <section class="portfolio-page container">
+        <div class="filter-btns">
+            <button id="All-Portfolio" (click)="setActiveButton('All');filterPortfolio('all')" class="primary-btn">All</button>
+            <button id="Apps-Portfolio" (click)="setActiveButton('Apps');filterPortfolio('app')" class="secondary-btn">Apps</button>
+            <button id="Websites-Portfolio" (click)="setActiveButton('Websites');filterPortfolio('website')" class="secondary-btn">Websites</button>
+        </div>
+    
+        <div class="portfolio">
+            @for (item of PreviousWebsite; track item) {
+            <div class="item" data-category="website">
+                <div class="overlay">
+                    <div class="view-project">
+                        <h3>{{item.projectName}}</h3>
+                        <!-- this is the category -->
+                        <p class="website">{{item.projectType}}</p>
+                        <div class="actions">
+                            <a (click)="showpopup(item)"><img src="../../../assets/public/svg/eye.svg" alt=""></a>
+                            <!-- <a href=""><img src="../../../assets/public/svg/link.svg" alt=""></a> -->
+                        </div>
+                    </div>
+                </div>
+                <img class="project-img" src="../../../assets/public/images/{{item.projectImage}}" alt="">
+            </div>
+        }
+            @for (item of PreviousApp; track item) {
+                <div class="item" data-category="app">
+                    <div class="overlay">
+                        <div class="view-project">
+                            <h3>{{item.projectName}}</h3>
+                            <!-- this is the category -->
+                            <p class="app-project">{{item.projectType}}</p>
+                            <div class="actions">
+                                <a (click)="showpopup(item)"><img src="../../../assets/public/svg/eye.svg" alt=""></a>
+                                <!-- <a href=""><img src="../../../assets/public/svg/link.svg" alt=""></a> -->
+                            </div>
+                        </div>
+                    </div>
+                    <img class="project-img" src="../../../assets/public/images/{{item.projectImage}}" alt="">
+                </div>
+              }
+        </div>
+    </section>
+    
+    <!-- portfolio page section  -->
+
+    <!-- portfolio popup -->
+    <div class="portfolio-popup">
+        <div class="popup">
+            <img id="popup-close" src="../../../assets/public/images/eye.png" alt="">
+            <div class="popup-left">
+                <h2>{{projectSelected.projectName}}</h2>
+                <div class="divider"><div class="divider1"></div><div class="divider2"></div><div class="divider2"></div></div>
+                <p>{{projectSelected.projectDescription}}</p>
+            </div>
+            <div class="popup-right">
+                <img src="../../../assets/public/images/{{projectSelected.projectImage}}" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- portfolio popup end -->

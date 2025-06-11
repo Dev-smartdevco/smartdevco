@@ -1,0 +1,43 @@
+<nav class="navbar">
+    <div class="container">
+        <a [routerLink]="['/home']" class="nav-logo">
+            <img src="../../../assets/public/svg/white-logo.svg" alt="">
+        </a>
+        <div class="nav-links">
+            <ul id="nav-list">
+                <li routerLinkActive="active"><a [routerLink]="['/home']">Home</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/about-us']">About Us</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/services']">Services</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/portfolio']">Portfolio</a></li>
+                <!-- <li routerLinkActive="active"><a [routerLink]="['/testimonials']">Testimonials</a></li> -->
+                <li routerLinkActive="active"><a [routerLink]="['/faq']">FAQ</a></li>
+                <li routerLinkActive="active"><a [routerLink]="['/contact-us']">Contact Us</a></li>
+                <!-- <li class="language-button"><img src="../../../assets/public/svg/Icon.svg" alt="">العربية</li> -->
+            </ul>
+        </div>
+        <!-- mobile nav -->
+        <div class="mobile-new-menu">
+            <a class="open-menu" href="javascript:void(0);"><img src="../../../assets/public/svg/Menu.svg" alt=""></a>
+            <div class="mobile-nav">
+                <div class="brand-logo">
+                    <img class="logo" src="../../../assets/public/svg/white-logo.svg" alt="">
+                    <img class="close-menu" src="../../../assets/public/svg/menuclose.svg" alt="">
+                </div>
+                <div class="m-nav-link">
+                    <ul>
+                        <li (click)="hidemenue()" routerLinkActive="active"><a [routerLink]="['/home']">Home</a></li>
+                        <li (click)="hidemenue()" routerLinkActive="active"><a [routerLink]="['/about-us']">About Us</a></li>
+                        <li (click)="hidemenue()" routerLinkActive="active"><a [routerLink]="['/services']">Services</a></li>
+                        <li (click)="hidemenue()" routerLinkActive="active"><a [routerLink]="['/portfolio']">Portfolio</a></li>
+                        <li (click)="hidemenue()" routerLinkActive="active"><a [routerLink]="['/faq']">FAQ</a></li>
+                        <!-- <li><a href="#">testimonial</a></li> -->
+                        <li (click)="hidemenue()" routerLinkActive="active"><a [routerLink]="['/contact-us']">Contact Us</a></li>
+                        <!-- <hr>
+                        <li class="language-button"><img src="../../../assets/public/svg/Icon.svg" alt="">العربية</li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- mobile nave end  -->
+    </div>
+</nav>

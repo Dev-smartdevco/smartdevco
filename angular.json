@@ -27,7 +27,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
@@ -39,7 +41,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "1000kb",
                   "maximumError": "1mb"
                 },
                 {
@@ -91,10 +93,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "487ca6af-cb40-4ab2-8449-98191e0263e9"
   }
 }

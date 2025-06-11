@@ -1,0 +1,45 @@
+div ul {
+    list-style: none;
+  }
+  
+  div li {
+    position: relative;
+    font-family:Arial;
+    font-size:20px;
+    margin:10px;
+  }
+  
+  div ul li::before {
+    content: "\2022";
+    color: var(--Primary);
+    position: absolute;
+    font-size: 25px;
+    left: -19px;
+    top:-3px;
+  }
+  
+  div ul li:first-child:before {
+   
+  }
+  
+  div ul li .headlist :before {
+   content: "\1F89D";
+   font-size: 30px;
+   left: -19px;
+   top:-9px;
+  }
+  .headlist{
+    font-weight: 500 !important;
+}
+  div ul li .contentlist:before {
+   content: "\1F892";
+   font-size: 30px;
+   left: -18px;
+   top:-12px;
+  }
+  
+
+  .faq-accordion .faq.active .ans ul {
+    height: max-content;
+    opacity: 1;
+}
