@@ -3,11 +3,10 @@ import { Component, Inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-services',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './services.component.html',
-  styleUrl: './services.component.css'
+    selector: 'app-services',
+    imports: [RouterLink],
+    templateUrl: './services.component.html',
+    styleUrl: './services.component.css'
 })
 export class ServicesComponent {
   constructor(@Inject(DOCUMENT) private document: Document){}

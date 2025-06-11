@@ -3,13 +3,11 @@ import { Component, Inject, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'home-portfolioslid',
-  standalone: true,
-  imports: [RouterLink],
-  schemas: [NO_ERRORS_SCHEMA],
-
-  templateUrl: './portfolioslid.component.html',
-  styleUrl: './portfolioslid.component.css'
+    selector: 'home-portfolioslid',
+    imports: [RouterLink],
+    schemas: [NO_ERRORS_SCHEMA],
+    templateUrl: './portfolioslid.component.html',
+    styleUrl: './portfolioslid.component.css'
 })
 export class PortfolioslidComponent {
 

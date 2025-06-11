@@ -2,11 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
 @Component({
-  selector: 'home-strategy',
-  standalone: true,
-  imports: [],
-  templateUrl: './strategy.component.html',
-  styleUrl: './strategy.component.css'
+    selector: 'home-strategy',
+    imports: [],
+    templateUrl: './strategy.component.html',
+    styleUrl: './strategy.component.css'
 })
 export class StrategyComponent {
 

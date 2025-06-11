@@ -3,11 +3,10 @@ import { Component, Inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'home-faq',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.css'
+    selector: 'home-faq',
+    imports: [RouterLink],
+    templateUrl: './faq.component.html',
+    styleUrl: './faq.component.css'
 })
 export class FaqComponent {
   constructor(@Inject(DOCUMENT) private document: Document){}

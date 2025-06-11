@@ -6,11 +6,10 @@ import { ToastrService } from 'ngx-toastr';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-contact-us',
-  standalone: true,
-  imports: [FormsModule,ReactiveFormsModule,RouterLink],
-  templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.css'
+    selector: 'app-contact-us',
+    imports: [FormsModule, ReactiveFormsModule, RouterLink],
+    templateUrl: './contact-us.component.html',
+    styleUrl: './contact-us.component.css'
 })
 export class ContactUsComponent {
   form!: FormGroup;

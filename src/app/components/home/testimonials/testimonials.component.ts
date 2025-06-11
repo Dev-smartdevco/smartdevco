@@ -2,11 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
 @Component({
-  selector: 'home-testimonials',
-  standalone: true,
-  imports: [],
-  templateUrl: './testimonials.component.html',
-  styleUrl: './testimonials.component.css'
+    selector: 'home-testimonials',
+    imports: [],
+    templateUrl: './testimonials.component.html',
+    styleUrl: './testimonials.component.css'
 })
 export class TestimonialsComponent {
   constructor(@Inject(DOCUMENT) private document: Document){}

@@ -2,11 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
 @Component({
-  selector: 'home-ourservices',
-  standalone: true,
-  imports: [],
-  templateUrl: './ourservices.component.html',
-  styleUrl: './ourservices.component.css'
+    selector: 'home-ourservices',
+    imports: [],
+    templateUrl: './ourservices.component.html',
+    styleUrl: './ourservices.component.css'
 })
 export class OurservicesComponent {
 

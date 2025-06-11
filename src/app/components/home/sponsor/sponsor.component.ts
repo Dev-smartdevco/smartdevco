@@ -2,11 +2,10 @@ import { DOCUMENT } from '@angular/common';
 import { Component, Inject } from '@angular/core';
 
 @Component({
-  selector: 'home-sponsor',
-  standalone: true,
-  imports: [],
-  templateUrl: './sponsor.component.html',
-  styleUrl: './sponsor.component.css'
+    selector: 'home-sponsor',
+    imports: [],
+    templateUrl: './sponsor.component.html',
+    styleUrl: './sponsor.component.css'
 })
 export class SponsorComponent {
  

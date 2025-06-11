@@ -14,22 +14,21 @@ import { FormGroup, FormBuilder, Validators, ReactiveFormsModule, FormsModule } 
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [RouterLink,
-           SliderComponent,
-           AboutusComponent,
-           OurservicesComponent,
-           StrategyComponent,
-           PortfolioslidComponent,
-          TestimonialsComponent,
-          FaqComponent,
-          SponsorComponent,
-          FormsModule,
-          ReactiveFormsModule],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+    selector: 'app-home',
+    imports: [RouterLink,
+        SliderComponent,
+        AboutusComponent,
+        OurservicesComponent,
+        StrategyComponent,
+        PortfolioslidComponent,
+        TestimonialsComponent,
+        FaqComponent,
+        SponsorComponent,
+        FormsModule,
+        ReactiveFormsModule],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.css'
 })
 export class HomeComponent {
   form!: FormGroup;

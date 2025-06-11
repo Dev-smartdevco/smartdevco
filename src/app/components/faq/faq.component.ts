@@ -3,11 +3,10 @@ import { Component, Inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-faq',
-  standalone: true,
-  imports: [RouterLink],
-  templateUrl: './faq.component.html',
-  styleUrl: './faq.component.css'
+    selector: 'app-faq',
+    imports: [RouterLink],
+    templateUrl: './faq.component.html',
+    styleUrl: './faq.component.css'
 })
 export class FAQComponent {
      AboutUsButton: HTMLElement | null = this.document.getElementById('AboutUs-FAQ');

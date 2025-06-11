@@ -2,12 +2,11 @@ import { DOCUMENT } from '@angular/common';
 import { CUSTOM_ELEMENTS_SCHEMA, Component, Inject, NO_ERRORS_SCHEMA } from '@angular/core';
 
 @Component({
-  selector: 'home-slider',
-  standalone: true,
-  imports: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA],
-  templateUrl: './slider.component.html',
-  styleUrl: './slider.component.css'
+    selector: 'home-slider',
+    imports: [],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA],
+    templateUrl: './slider.component.html',
+    styleUrl: './slider.component.css'
 })
 export class SliderComponent {
   heroContent: any | null;
