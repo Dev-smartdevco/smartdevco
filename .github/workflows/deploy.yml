@@ -22,7 +22,7 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build Angular app
-        run: npm run build -- --configuration production --base-href /
+        run: ng build --aot --optimization=true --source-map=false --output-hashing=all --configuration=production --base-href /
 
       - name: Verify Firebase Secret
         run: |
