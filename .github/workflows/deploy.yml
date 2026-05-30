@@ -19,10 +19,10 @@ jobs:
           node-version: 20
 
       - name: Install dependencies
-        run: npm i
+        run: npm install --legacy-peer-deps
 
       - name: Build Angular app
-        run: ng build --aot --optimization=true --source-map=false --output-hashing=all --configuration=production --base-href /
+        run: npm run build -- --configuration production --base-href /
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -30,4 +30,4 @@ jobs:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
           firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT }}"
           projectId: smartdevco-90cf0
-          channelId: main
+          channelId: live
