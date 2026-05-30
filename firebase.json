@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/smartdevco",
+    "public": "dist/smartdevco/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
